@@ -5,6 +5,9 @@ Adds the # of times a post has been shared on major social networks as post meta
 
 **Please Note**: This plugin requires an account / API from http://sharecount.com/ in order to work.
 
+#Pull Requests Welcome
+Let's make it a kick-ass plugin we can share with the worlds.
+
 ## Installation
 
 * Upload this directory to your '/wp-content/plugins/' directory, using your prefered method (ftp, sftp, etc.)
