@@ -50,13 +50,13 @@ class HM_Social_Counts {
 	public function __construct() {
 		
 		// Set a time, frequency and name of our cron schedule.
-		register_activation_hook( plugin_dir_path( __FILE__ ) . 'social-counts.php', array( $this, 'schedule_wp_cron' ) );
+		register_activation_hook( HMSC_PLUGIN_FILE, array( $this, 'schedule_wp_cron' ) );
 		
 		// On the scheduled action hook, run our cron function.
 		add_action( 'hm_social_counts_event', array( $this, 'process_counts' ) );
 		
 		// On deactivation, remove our event from the scheduled action hook.
-		register_deactivation_hook( plugin_dir_path( __FILE__ ) . 'social-counts.php', array( $this, 'deactivate_wp_cron' ) );
+		register_deactivation_hook( HMSC_PLUGIN_FILE, array( $this, 'deactivate_wp_cron' ) );
 		
 	}
 	
@@ -177,5 +177,3 @@ class HM_Social_Counts {
 function HM_Social_Counts() {
 	return HM_Social_Counts::instance();
 }
-
-HM_Social_Counts();

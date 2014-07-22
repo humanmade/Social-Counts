@@ -25,5 +25,9 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit on Direct Access
 }
+
+define( 'HMSC_PLUGIN_FILE', __FILE__ );
 	
 require_once( 'class.hm-social-counts.php' );
+
+HM_Social_Counts();
