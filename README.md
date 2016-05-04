@@ -3,7 +3,7 @@ HM Social Counts
 
 Adds the # of times a post has been shared on major social networks as post meta. It uses http://sharedcount.com/ and it's API.
 
-**Please Note**: This plugin requires an account / API from http://sharecount.com/ in order to work.
+**Please Note**: This plugin requires an account / API from http://sharedcount.com/ in order to work.
 
 #Pull Requests Welcome
 Let's make it a kick-ass plugin we can share with the worlds.
