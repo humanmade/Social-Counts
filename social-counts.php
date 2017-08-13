@@ -24,6 +24,8 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 
 namespace HM\Social_Counts;
 
+use WP_Error;
+
 if ( ! defined( 'HM_SOCIAL_COUNTS_API_KEY' ) ) {
 	return;
 }
@@ -50,6 +52,9 @@ function update_social_share_count( int $post_id ) {
 	$url = str_replace( site_url(), 'http://snopes.com', $url );
 	$response = wp_remote_get( esc_url_raw( 'http://free.sharedcount.com/?url=' . $url . '&apikey=' . HM_SOCIAL_COUNTS_API_KEY ) );
 	$response = json_decode( wp_remote_retrieve_body( $response ), true );
+	if ( ! empty( $response['Error'] ) ) {
+		return new WP_Error( $response['Type'], $response['Error'] );
+	}
 	$response['Facebook'] = $response['Facebook']['total_count'];
 	$response['total'] = array_sum( $response );
 	update_post_meta( $post_id, 'hm_share_counts', $response );
