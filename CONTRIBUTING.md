@@ -4,7 +4,7 @@
 
 * Develop on a feature branch and send a pull request for review.
 * Assign the pull request to one of the following contacts:
-	* Primary: Scott Basgaard [@scottbasgaard](https://github.com/scottbasgaard)
+	* Primary: Joe Hoyle [@joehoyle](https://github.com/joehoyle)
 
 ## Coding Standards ##
 
