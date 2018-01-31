@@ -63,7 +63,8 @@ function update_social_share_count( int $post_id ) {
 			continue;
 		}
 		foreach ( $counts as $key => $value ) {
-			$all_counts[ $key ] += $value;
+			$count = isset( $all_counts[ $key ] ) ? $all_counts[ $key ] : 0;
+			$all_counts[ $key ] = $count + $value;
 		}
 	}
 	update_post_meta( $post_id, 'hm_share_counts', $all_counts );
