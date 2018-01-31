@@ -63,7 +63,7 @@ function update_social_share_count( int $post_id ) {
 			continue;
 		}
 		foreach ( $counts as $key => $value ) {
-			$count = isset ( $all_counts[ $key ] ) ? $all_counts[ $key ] : 0;
+			$count = isset( $all_counts[ $key ] ) ? $all_counts[ $key ] : 0;
 			$all_counts[ $key ] = $count + $value;
 		}
 	}
