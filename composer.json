@@ -1,0 +1,20 @@
+{
+	"name": "humanmade/social-counts",
+	"description": "Adds the # of times a post has been shared on major social networks as post meta.",
+	"type": "wordpress-plugin",
+	"license": "GPL-2.0-or-later",
+	"homepage": "https://github.com/humanmade/Social-Counts",
+	"readme": "README.md",
+	"authors": [
+		{
+			"name": "Human Made",
+			"homepage": "https://hmn.md/"
+		}
+	],
+	"require": {
+		"composer/installers": "~1.0"
+	},
+	"require-dev": {
+		"humanmade/coding-standards": "dev-master"
+	}
+}
