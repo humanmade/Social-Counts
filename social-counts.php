@@ -5,7 +5,7 @@ Plugin URI: https://github.com/humanmade/Social-Counts
 Description: Adds the # of times a post has been shared on major social networks as post meta.
 Version: 2.0
 Author: Human Made
-Author URI: http://hmn.md/
+Author URI: https://hmn.md/
 License: GPL2
 
 This program is free software; you can redistribute it and/or modify
